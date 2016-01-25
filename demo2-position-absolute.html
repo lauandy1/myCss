@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+    <style>
+        .simple {
+            width: 500px;
+            margin: 20px auto;
+            padding: 60px;
+            border: 10px solid;
+            border-color:blue;
+            background-color: bisque
+        }
+        .fancy {
+            width: 200px;
+            margin: 30px auto;
+            padding: 50px;
+            border: 10px solid;
+            border-color:brown;
+            background-color: burlywood
+        }
+        .relative1 {
+            position: relative;
+        }
+        .relative2 {
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+        .absolute1 {
+            position: absolute;
+        }
+        .absolute2 {
+            position: absolute;
+            top: 20px;
+            right: 10px
+        }
+    </style>
+    <body>
+        <div class="simple absolute1">
+            <!-- 绝对定位是相对于最近的并且定位是positioned(fixed, absolute)祖先元素-->
+            <div class="fancy absolute2">fancy</div>
+        </div>
+    </body>
+</html>
